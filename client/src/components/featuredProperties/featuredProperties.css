@@ -1,0 +1,87 @@
+.featured-properties {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.fp-item {
+  flex: 1;
+  min-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.fp-item:hover {
+  transform: translateY(-5px);
+}
+
+.fp-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.fp-details {
+  padding: 15px;
+}
+
+.fp-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.fp-city {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 5px;
+}
+
+.fp-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.fp-rating {
+  display: flex;
+  align-items: center;
+}
+
+.fp-rating-score {
+  background-color: #003580;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.fp-rating-review {
+  font-size: 14px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .featured-properties {
+    flex-wrap: wrap;
+  }
+
+  .fp-item {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .fp-item {
+    flex-basis: 100%;
+  }
+}

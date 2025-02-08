@@ -1,0 +1,87 @@
+.mail-list {
+  width: 100%;
+  background-color: #003580;
+  color: white;
+  padding: 60px 20px;
+}
+
+.mail-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mail-list-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mail-list-desc {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.mail-list-form {
+  display: flex;
+  justify-content: center;
+}
+
+.mail-list-input-container {
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+}
+
+.mail-list-input {
+  flex-grow: 1;
+  height: 50px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+.mail-list-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0071c2;
+}
+
+.mail-list-button {
+  height: 70px;
+  padding: 0 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mail-list-button:hover {
+  background-color: #005fa3;
+}
+
+.mail-list-privacy {
+  font-size: 0.8rem;
+  margin-top: 15px;
+  color: #ccc;
+}
+
+@media (max-width: 480px) {
+  .mail-list-input-container {
+    flex-direction: column;
+  }
+
+  .mail-list-input {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .mail-list-button {
+    width: 100%;
+    border-radius: 5px;
+  }
+}

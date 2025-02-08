@@ -1,0 +1,167 @@
+.header {
+  background-color: #003580;
+  color: white;
+  padding: 20px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-nav {
+  margin-bottom: 40px;
+}
+
+.header-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.header-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-list-item.active {
+  border: 1px solid white;
+}
+
+.header-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.header-desc {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.header-btn {
+  background-color: #0071c2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #005fa3;
+}
+
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #febb02;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.header-search-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  color: #777;
+}
+
+.header-search-input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.header-search-text {
+  color: #777;
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+  position: absolute;
+  top: 60px;
+  background-color: white;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 2;
+}
+
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.option-counter-button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.option-counter-button:hover:not(:disabled) {
+  background-color: #0071c2;
+  color: white;
+}
+
+.option-counter-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.option-counter-number {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .header-search {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-search-item {
+    width: 100%;
+  }
+}

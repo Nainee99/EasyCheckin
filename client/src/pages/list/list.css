@@ -1,0 +1,146 @@
+/* General Layout */
+.list-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.list-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Search Section */
+.list-search {
+  flex: 1;
+  background-color: #0071c2;
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.ls-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.ls-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px; /* Added more spacing */
+}
+
+.ls-item > label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Added spacing between label and input */
+}
+
+.ls-item > input,
+.ls-item > span {
+  height: 45px;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ls-item > input:focus {
+  background-color: #e0e0e0;
+}
+
+.date-text {
+  color: black; /* Changed date text to black */
+}
+
+/* Date Picker */
+.date-range {
+  margin-top: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+/* Options */
+.ls-options {
+  color: black;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.ls-option-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.ls-option-input {
+  width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Search Button */
+.list-search-btn {
+  padding: 12px;
+  background-color: #005fa3;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.list-search-btn:hover {
+  background-color: #004080;
+}
+
+/* Results Section */
+.list-result {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .list-wrapper {
+    flex-direction: column;
+  }
+
+  .list-search {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .ls-item > input {
+    width: 100%;
+  }
+}

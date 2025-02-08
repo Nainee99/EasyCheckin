@@ -1,0 +1,115 @@
+/* Container Card */
+.search-item {
+  background: #fff;
+  border: 2px solid #0071c2; /* Blue accent border */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.search-item:hover {
+  transform: scale(1.02);
+}
+
+/* Full-width image on top */
+.search-item-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Content Area */
+.search-item-info {
+  padding: 20px;
+}
+
+/* Title and Descriptions */
+.search-item-title {
+  font-size: 24px;
+  color: #0071c2; /* Blue title */
+  margin: 0 0 10px;
+}
+
+.search-item-distance,
+.search-item-subtitle,
+.search-item-features,
+.search-item-cancel-op,
+.search-item-cancel-op-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Taxi Option Badge */
+.search-item-taxi-op {
+  display: inline-block;
+  background-color: #0071c2;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+/* Rating Badge */
+.search-item-rating {
+  display: inline-block;
+  background-color: #0071c2;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Details and Pricing */
+.search-item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.search-item-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0071c2;
+}
+
+/* Container for tax text and check button */
+.search-item-check-container {
+  text-align: right;
+}
+
+.search-item-tax-op {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Check Availability Button */
+.search-item-check-button {
+  background-color: #0071c2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-item-check-button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-item-img {
+    height: 200px;
+  }
+}
