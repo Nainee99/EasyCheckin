@@ -54,3 +54,13 @@
     height: 200px;
   }
 }
+
+@media (max-width: 480px) {
+  .featured-titles h2 {
+    font-size: 20px;
+  }
+
+  .featured-titles p {
+    font-size: 14px;
+  }
+}

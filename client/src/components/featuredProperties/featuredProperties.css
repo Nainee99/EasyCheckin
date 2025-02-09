@@ -84,4 +84,14 @@
   .fp-item {
     flex-basis: 100%;
   }
+
+  .fp-name {
+    font-size: 16px;
+  }
+
+  .fp-city,
+  .fp-price,
+  .fp-rating-review {
+    font-size: 12px;
+  }
 }

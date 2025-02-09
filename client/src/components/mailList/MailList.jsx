@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "./MailList.css";
+import "./mailList.css";
 
 const MailList = () => {
   const [email, setEmail] = useState("");

@@ -77,9 +77,8 @@ const Header = ({ type }) => {
               </h1>
               <p className="header-desc">
                 Get rewarded for your travels – unlock instant savings of 10% or
-                more with a free Lamabooking account
+                more with a free EasyCheckin account
               </p>
-              <button className="header-btn">Sign in / Register</button>
             </div>
             <div className="header-search">
               <div className="header-search-item">

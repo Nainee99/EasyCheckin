@@ -19,6 +19,8 @@
   gap: 20px;
   list-style-type: none;
   padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .header-list-item {
@@ -70,6 +72,7 @@
 
 .header-search {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -83,6 +86,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .header-icon {
@@ -163,5 +167,47 @@
 
   .header-search-item {
     width: 100%;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-desc {
+    font-size: 1rem;
+  }
+
+  .date {
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .options {
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-desc {
+    font-size: 0.9rem;
+  }
+
+  .header-list {
+    gap: 10px;
+  }
+
+  .header-list-item {
+    padding: 5px;
+  }
+
+  .header-search-text {
+    font-size: 0.9rem;
   }
 }
